@@ -1,0 +1,31 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "netuitive.jenkins.successpercent",
+        "properties": {
+          "capture": "jenkins.(.*).success",
+          "expressions": [
+            "100 * ${jenkins.${1}.success}.actual / ${jenkins.${1}.completed}.actual"
+          ],
+          "fqn": "netuitive.jenkins.${1}.successpercent"
+        }
+      },
+      {
+        "match": "netuitive.jenkins.failurepercent",
+        "properties": {
+          "capture": "jenkins.(.*).failure",
+          "expressions": [
+            "100 * ${jenkins.${1}.failure}.actual / ${jenkins.${1}.completed}.actual"
+          ],
+          "fqn": "netuitive.jenkins.${1}.failurepercent"
+        }
+      }
+    ],
+    "name": "Jenkins",
+    "scope": {
+      "elementType": "Jenkins"
+    },
+    "type": "COMPUTED_METRIC"
+  }
+}

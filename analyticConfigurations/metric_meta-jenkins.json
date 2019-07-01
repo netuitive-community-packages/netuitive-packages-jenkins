@@ -1,0 +1,66 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "jenkins\\..*\\.completed",
+        "properties": {
+          "STATISTIC": "sum",
+          "sparseDataStrategy": "ReplaceWithZero"
+        }
+      },
+      {
+        "match": "jenkins\\..*\\.success",
+        "properties": {
+          "STATISTIC": "sum",
+          "sparseDataStrategy": "ReplaceWithZero"
+        }
+      },
+      {
+        "match": "jenkins\\..*\\.failure",
+        "properties": {
+          "STATISTIC": "sum",
+          "sparseDataStrategy": "ReplaceWithZero"
+        }
+      },
+      {
+        "match": "jenkins\\..*\\.waiting",
+        "properties": {
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      },
+      {
+        "match": "jenkins\\..*\\.duration",
+        "properties": {
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      },
+      {
+        "match": "netuitive\\.jenkins\\..*\\.successpercent",
+        "properties": {
+          "tags": {
+            "unit": "percent"
+          },
+          "validMax": 100
+        }
+      },
+      {
+        "match": "netuitive\\.jenkins\\..*\\.failurepercent",
+        "properties": {
+          "tags": {
+            "unit": "percent"
+          },
+          "validMax": 100
+        }
+      }
+    ],
+    "name": "Jenkins",
+    "scope": {
+      "elementType": "Jenkins"
+    },
+    "type": "METRIC_META"
+  }
+}

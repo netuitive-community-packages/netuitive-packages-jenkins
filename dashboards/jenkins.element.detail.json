@@ -1,0 +1,146 @@
+{
+  "dashboard": {
+    "creatorEmail": "research@metricly.com",
+    "name": "Jenkins Element Detail",
+    "private": false,
+    "properties": {
+      "costOnly": "false",
+      "globalFilter": "false",
+      "gridstackContents": "[{\"id\":\"cadde63c-8469-4805-8268-acc09c3ad068\",\"x\":6,\"y\":7,\"width\":6,\"height\":7},{\"id\":\"061d4ca1-8984-40b8-9ca1-77b4a0d5a892\",\"x\":0,\"y\":0,\"width\":6,\"height\":7},{\"id\":\"b5783f65-ca72-4709-a223-ff87595703be\",\"x\":0,\"y\":7,\"width\":6,\"height\":7},{\"id\":\"11e4eb0b-9954-47b3-b591-0b7e0a2c049a\",\"x\":6,\"y\":0,\"width\":6,\"height\":7},{\"id\":\"5a1fb631-6f4e-4b36-9b16-cfddcd885c62\",\"x\":0,\"y\":14,\"width\":6,\"height\":9},{\"id\":\"018f0fc6-46dc-45c5-a56a-e99d051a8db4\",\"x\":6,\"y\":14,\"width\":6,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "14400",
+      "wrap": "true"
+    },
+    "type": "JENKINS",
+    "widgets": [
+      {
+        "id": "cadde63c-8469-4805-8268-acc09c3ad068",
+        "name": "Average Job Wait Time",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"Jenkins\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ms",
+          "metrics": "[{\"fqn\":\"jenkins.*.waiting\",\"useRegex\":true,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "061d4ca1-8984-40b8-9ca1-77b4a0d5a892",
+        "name": "Job Success Percent",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"Jenkins\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"netuitive.jenkins.*.successpercent\",\"useRegex\":true,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "b5783f65-ca72-4709-a223-ff87595703be",
+        "name": "Average Job Duration",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"Jenkins\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ms",
+          "metrics": "[{\"fqn\":\"jenkins.*.duration\",\"useRegex\":true,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "11e4eb0b-9954-47b3-b591-0b7e0a2c049a",
+        "name": "Job Failure Percent",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"Jenkins\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"netuitive.jenkins.*.failurepercent\",\"useRegex\":true,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "5a1fb631-6f4e-4b36-9b16-cfddcd885c62",
+        "name": "Attributes",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-attributes"
+      },
+      {
+        "id": "018f0fc6-46dc-45c5-a56a-e99d051a8db4",
+        "name": "Tags",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-tags"
+      }
+    ]
+  }
+}

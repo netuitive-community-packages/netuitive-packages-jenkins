@@ -1,0 +1,32 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "jenkins.*.completed",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "jenkins.*.success",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "jenkins.*.failure ",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      }
+    ],
+    "name": "Jenkins",
+    "scope": {
+      "elementType": "Jenkins"
+    },
+    "type": "ACE"
+  }
+}
