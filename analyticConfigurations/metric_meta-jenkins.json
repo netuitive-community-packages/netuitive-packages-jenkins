@@ -39,7 +39,7 @@
         }
       },
       {
-        "match": "netuitive\\.jenkins\\..*\\.successpercent",
+        "match": "netuitive\\.jenkins\\..*\\.job.successpercent",
         "properties": {
           "tags": {
             "unit": "percent"
@@ -48,7 +48,7 @@
         }
       },
       {
-        "match": "netuitive\\.jenkins\\..*\\.failurepercent",
+        "match": "netuitive\\.jenkins\\..*\\.job.failurepercent",
         "properties": {
           "tags": {
             "unit": "percent"

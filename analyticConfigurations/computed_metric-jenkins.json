@@ -2,23 +2,23 @@
   "analyticConfiguration": {
     "metrics": [
       {
-        "match": "netuitive.jenkins.successpercent",
+        "match": "netuitive.jenkins.job.successpercent",
         "properties": {
           "capture": "jenkins.(.*).success",
           "expressions": [
             "100 * ${jenkins.${1}.success}.actual / ${jenkins.${1}.completed}.actual"
           ],
-          "fqn": "netuitive.jenkins.${1}.successpercent"
+          "fqn": "netuitive.jenkins.${1}.job.successpercent"
         }
       },
       {
-        "match": "netuitive.jenkins.failurepercent",
+        "match": "netuitive.jenkins.job.failurepercent",
         "properties": {
           "capture": "jenkins.(.*).failure",
           "expressions": [
             "100 * ${jenkins.${1}.failure}.actual / ${jenkins.${1}.completed}.actual"
           ],
-          "fqn": "netuitive.jenkins.${1}.failurepercent"
+          "fqn": "netuitive.jenkins.${1}.job.failurepercent"
         }
       }
     ],
